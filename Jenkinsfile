@@ -6,5 +6,10 @@ pipeline {
                 checkout scm
             }
         }
+        stage("Build") {
+            steps {
+                node -v
+            }
+        }
     }
 }
